@@ -19,6 +19,11 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("-------------------------------");
+		System.out.println("EXERCICIO DE FIXAÇÃO");
+		System.out.println("-------------------------------");
+		
+		System.out.println();
 		System.out.println("Enter cliente data:");
 		System.out.print("Name: ");
 		String name = sc.nextLine();
