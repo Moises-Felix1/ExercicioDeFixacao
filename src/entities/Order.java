@@ -44,10 +44,6 @@ public class Order {
 		this.status = status;
 	}
 
-	public List<OrderItem> getItems() {
-		return items;
-	}
-
 	public Client getClient() {
 		return client;
 	}

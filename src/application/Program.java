@@ -27,6 +27,7 @@ public class Program {
 		System.out.print("Birth date(DD/MM/YYYY): ");
 		String data = sc.next();
 		LocalDate date = LocalDate.parse(data, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+		Client client = new Client(name, email, date);
 		
 		System.out.println();
 		
@@ -38,7 +39,7 @@ public class Program {
 		System.out.print("How many items to this order? ");
 		int n = sc.nextInt();
 		Date agora = new Date();
-		Order order = new Order(agora, OrderStatus.valueOf(status), new Client(name, email, date));
+		Order order = new Order(agora, OrderStatus.valueOf(status), client);
 		
 		System.out.println();
 		
